@@ -23,7 +23,7 @@ const ProjectsSection = () => {
         "Next.js portfolio built with Tailwind CSS and Framer Motion. Features projects, contact links, and a downloadable resume for job applications.",
       imgUrl: "/images/projects/portfolio.png",
       tags: ["All", "Web"],
-      gitUrl: "https://github.com/A-Hicken/portfolio_website-main",
+      gitUrl: "https://github.com/A-Hicken/MyPortfolioWebsite.git",
       previewUrl: "", // put your live URL here later
     },
     {
