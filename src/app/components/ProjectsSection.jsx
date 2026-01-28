@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       imgUrl: "/images/projects/portfolio.png",
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/MyPortfolioWebsite.git",
-      previewUrl: "", // put your live URL here later
+      previewUrl: "https://amberlie.vercel.app",
     },
     {
       id: 3,
