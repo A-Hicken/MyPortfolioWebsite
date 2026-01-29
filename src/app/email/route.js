@@ -7,27 +7,26 @@ export async function POST(req) {
     if (!process.env.RESEND_API_KEY) {
       return Response.json(
         { ok: false, error: "Missing RESEND_API_KEY" },
-        { status: 500 }
+        { status: 500 },
       );
     }
-
     if (!process.env.CONTACT_TO_EMAIL) {
       return Response.json(
         { ok: false, error: "Missing CONTACT_TO_EMAIL" },
-        { status: 500 }
+        { status: 500 },
       );
     }
-
     if (!email || !subject || !message) {
       return Response.json(
         { ok: false, error: "Missing form fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const data = await resend.emails.send({
+    // 1) Always email YOU
+    const notify = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: [process.env.CONTACT_TO_EMAIL],
       subject: `Portfolio: ${subject}`,
@@ -35,12 +34,35 @@ export async function POST(req) {
       reply_to: email,
     });
 
-    return Response.json({ ok: true, data }, { status: 200 });
+    // 2) Try auto-reply (may fail until domain is verified)
+    let confirm = null;
+    let confirmError = null;
+
+    try {
+      confirm = await resend.emails.send({
+        from: "Amberlie Hicken <onboarding@resend.dev>",
+        to: [email],
+        subject: "Message received ✅",
+        text:
+          `Hi!\n\n` +
+          `Thanks for reaching out — I received your message and I’ll get back to you as soon as I can.\n\n` +
+          `— Amberlie`,
+        reply_to: process.env.CONTACT_TO_EMAIL,
+      });
+    } catch (e) {
+      confirmError = e?.message || String(e);
+      console.error("AUTO-REPLY ERROR:", confirmError);
+    }
+
+    return Response.json(
+      { ok: true, notify, confirm, confirmError },
+      { status: 200 },
+    );
   } catch (err) {
     console.error("EMAIL SEND ERROR:", err);
     return Response.json(
       { ok: false, error: err?.message || "Send failed" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

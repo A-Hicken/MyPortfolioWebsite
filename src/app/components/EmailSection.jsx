@@ -32,11 +32,12 @@ const EmailSection = () => {
 
     const response = await fetch(endpoint, options);
     const resData = await response.json();
-    console.log(resData);
+    console.log("API response:", resData);
 
-    if (response.status === 200) {
-      console.log("Message sent.");
+    if (response.ok && resData.ok) {
       setEmailSubmitted(true);
+    } else {
+      alert(resData.error || "Email failed to send.");
     }
   };
 
