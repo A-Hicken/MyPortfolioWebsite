@@ -14,7 +14,7 @@ const ProjectsSection = () => {
       imgUrl: "/images/projects/homesteadhub.png",
       tags: ["All", "Mobile"],
       gitUrl: "https://github.com/A-Hicken/homesteadHub",
-      previewUrl: "",
+      previewUrl: "/images/projects/homesteadhub-demo.gif",
     },
     {
       id: 2,
