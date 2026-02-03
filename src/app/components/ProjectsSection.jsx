@@ -34,7 +34,7 @@ const ProjectsSection = () => {
       imgUrl: "/images/projects/rngoalsapp.png",
       tags: ["All", "Mobile"],
       gitUrl: "https://github.com/A-Hicken/RNGoalsApp",
-      previewUrl: "",
+      previewUrl: "/images/projects/rngoalsapp-demo.gif",
     },
     {
       id: 4,
