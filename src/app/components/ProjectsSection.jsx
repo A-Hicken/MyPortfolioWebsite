@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       imgUrl: "/images/projects/employee-admin.png",
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/EmployeeAdminPortal",
-      previewUrl: "",
+      previewUrl: "/images/projects/employeeadmin-demo.gif",
     },
     {
       id: 5,
