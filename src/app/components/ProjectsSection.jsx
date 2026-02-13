@@ -73,9 +73,9 @@ const ProjectsSection = () => {
     setActiveTag(newTag);
   };
 
-  const filteredProjects = useMemo(() => {
-    return projectsData.filter((p) => p.tags.includes(activeTag));
-  }, [activeTag]);
+  const filteredProjects = projectsData.filter((p) =>
+    p.tags.includes(activeTag),
+  );
 
   return (
     <section id="projects" className="py-16">
