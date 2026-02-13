@@ -47,7 +47,6 @@ const ProjectsSection = () => {
       ],
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/EmployeeAdminPortal",
-      previewUrl: "",
     },
     {
       id: 5,
