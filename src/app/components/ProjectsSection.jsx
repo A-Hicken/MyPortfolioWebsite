@@ -41,10 +41,13 @@ const ProjectsSection = () => {
       title: "Employee Admin Portal",
       description:
         "C# CRUD application for managing employee records. Focused on clean architecture, structured data handling, and real-world admin workflows.",
-      imgUrl: "/images/projects/employee-admin.png",
+      imgUrl: [
+        "/images/projects/EmployeeAdminPortal-screenshot_api/employee.jpg",
+        "/images/projects/EmployeeAdminPortal-screenshot.jpg",
+      ],
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/EmployeeAdminPortal",
-      previewUrl: "/images/projects/employeeadmin-demo.gif",
+      previewUrl: "",
     },
     {
       id: 5,
