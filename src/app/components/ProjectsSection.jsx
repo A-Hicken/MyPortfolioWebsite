@@ -50,7 +50,7 @@ const ProjectsSection = () => {
       title: "Razor Pages Movie App",
       description:
         "ASP.NET Core Razor Pages app demonstrating CRUD operations, data flow, and standard .NET patterns used in enterprise-style applications.",
-      imgUrl: "/images/projects/razorpagesmovie.png",
+      imgUrl: "",
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/RazorPagesMovie",
       previewUrl: "",
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
       title: "Tequila’s Restaurant App",
       description:
         "C# project modeling restaurant workflows such as menu and ordering logic, designed to demonstrate practical business app structure and maintainable code.",
-      imgUrl: "/images/projects/tequilas.png",
+      imgUrl: "",
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/TequilasRestaurantApp",
       previewUrl: "",
