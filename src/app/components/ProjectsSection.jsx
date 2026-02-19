@@ -50,7 +50,7 @@ const ProjectsSection = () => {
       title: "Razor Pages Movie App",
       description:
         "ASP.NET Core Razor Pages app demonstrating CRUD operations, data flow, and standard .NET patterns used in enterprise-style applications.",
-      imgUrl: "/images/projects/razerpagesmovie.png",
+      imgUrl: "/images/projects/razerpagesmovieapp.png",
       tags: ["All", "Web"],
       gitUrl: "https://github.com/A-Hicken/RazorPagesMovie",
       previewUrl: "",
