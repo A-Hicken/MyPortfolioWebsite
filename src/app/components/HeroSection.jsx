@@ -19,7 +19,7 @@ const HeroSection = () => {
               Hello, I&apos;m
             </span>
             <span className="block">Amberlie</span>
-            <span className="block text-primary-400 text-2xl sm:text-3xl lg:text-4xl mt-2">
+            <span className="block text-primary-400 text-2xl sm:text-3xl lg:text-4xl mt-2 whitespace-nowrap">
               Full Stack Developer (React / .NET)
             </span>
           </h1>
