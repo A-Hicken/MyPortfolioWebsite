@@ -23,14 +23,12 @@ const HeroSection = () => {
               Full Stack Developer (React / .NET)
             </span>
           </h1>
-
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl max-w-3xl">
             I build clean, scalable, and API-driven applications using React,
             .NET, and modern web technologies. I focus on thoughtful UI,
             performance, and creating seamless user experiences backed by
             reliable backend systems.
           </p>
-
           <div className="mt-8 mb-8 flex flex-col gap-4">
             <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-400">
               Tech Stack
@@ -49,11 +47,10 @@ const HeroSection = () => {
               )}
             </div>
           </div>
-
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+          <div className="mt-2 flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-0 sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              href="mailto:amberlie.hicken@gmail.com?subject=Opportunity%20from%20your%20portfolio"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white font-medium w-full sm:w-fit transition-all duration-200 hover:scale-105"
             >
               Contact Me
             </Link>
@@ -62,13 +59,11 @@ const HeroSection = () => {
               href="/Amberlie_Hicken_Resume2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white font-medium w-full sm:w-fit transition-all duration-200 hover:scale-105"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download Resume
-              </span>
+              Download Resume
             </a>
-          </div>
+          </div>{" "}
         </motion.div>
 
         <motion.div
