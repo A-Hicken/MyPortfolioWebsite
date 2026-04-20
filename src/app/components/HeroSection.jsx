@@ -7,7 +7,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,33 +20,49 @@ const HeroSection = () => {
             </span>
             <span className="block">Amberlie</span>
             <span className="block text-primary-400 text-2xl sm:text-3xl lg:text-4xl mt-2">
-              Frontend Engineer
-            </span>
-            <span className="block text-primary-400 text-xl sm:text-2xl lg:text-3xl mt-1">
-              React & UI
+              Full Stack Developer (React / .NET)
             </span>
           </h1>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I build clean, responsive, and scalable web applications using
-            React, Next.js, and modern frontend architecture. I focus on
-            thoughtful UI, performance, and creating user experiences that feel
-            intuitive and fast.
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl max-w-3xl">
+            I build clean, scalable, and API-driven applications using React,
+            .NET, and modern web technologies. I focus on thoughtful UI,
+            performance, and creating seamless user experiences backed by
+            reliable backend systems.
           </p>
 
-          <div>
+          <div className="mt-8 mb-8 flex flex-col gap-4">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-400">
+              Tech Stack
+            </span>
+
+            <div className="flex flex-wrap gap-3">
+              {["React", "JavaScript", "C#", ".NET", "REST APIs", "SQL"].map(
+                (tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-primary-400/50 bg-primary-400/10 px-4 py-2 text-sm font-medium text-white"
+                  >
+                    {tech}
+                  </span>
+                ),
+              )}
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-0 sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              Contact Me
             </Link>
 
             <a
               href="/Amberlie_Hicken_Resume2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download Resume
