@@ -49,7 +49,7 @@ const HeroSection = () => {
           </div>
           <div className="mt-2 flex flex-col sm:flex-row gap-4">
             <Link
-              href="mailto:amberlie.hicken@gmail.com?subject=Opportunity%20from%20your%20portfolio"
+              href="/#contact"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white font-medium w-full sm:w-fit transition-all duration-200 hover:scale-105"
             >
               Contact Me
