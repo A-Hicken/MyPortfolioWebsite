@@ -8,7 +8,7 @@ const Footer = () => {
 
         <div className="flex gap-4 text-slate-400 text-sm">
           <a
-            href="/A-Hicken_Resume2026.pdf"
+            href="A-Hicken_Resume2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"

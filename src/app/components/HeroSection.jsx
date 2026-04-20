@@ -56,7 +56,7 @@ const HeroSection = () => {
             </Link>
 
             <a
-              href="/A-Hicken_Resume2026.pdf"
+              href="A-Hicken_Resume2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white font-medium w-full sm:w-fit transition-all duration-200 hover:scale-105"
